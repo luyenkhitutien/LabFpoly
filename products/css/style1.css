@@ -1,0 +1,236 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+main{
+    min-height: 1000px; 
+}
+
+header {
+    background-color: #143447;
+    padding: 20px;
+}
+
+.san-pham {
+    display: flex;
+    margin: 20px;
+}
+
+.hinh-anh {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.hinh-anh img {
+    width: 100%;
+    height: auto;
+}
+
+.thong-tin {
+    width: 60%;
+}
+
+.thong-tin h2 {
+    margin-bottom: 10px;
+}
+
+.thong-tin p {
+    line-height: 1.6;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 0;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.thong-tin form {
+    margin-top: 20px;
+}
+
+.thong-tin input[type="number"] {
+    width: 50px;
+    padding: 5px;
+}
+
+.thong-tin button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.thong-tin button:hover {
+    background-color: crimson;
+}
+
+footer {
+    width: 100%;
+    border-top: 5px double #143447;
+    line-height: 40px;
+    background-color: lightcyan;
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+}
+
+.product-description {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.product-description ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-description li {
+    margin-bottom: 10px;
+}
+
+.product-description strong {
+    font-weight: bold;
+}
+
+.product-description p {
+    margin-bottom: 10px;
+}
+
+.product-description h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.danh-sach-anh {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+.danh-sach-anh li {
+    display: none;
+}
+
+.danh-sach-anh li:first-child {
+    /* Hiển thị ảnh đầu tiên */
+    display: block;
+}
+
+.danh-sach-anh img{
+    max-width: 600px;
+}
+
+.nut-bam {
+    position: relative;
+    /* Để định vị pseudo-elements */
+    display: inline-block;
+    /* Đảm bảo button chiếm đúng không gian */
+    padding: 10px 20px;
+    /* Chỉnh sửa kích thước button */
+    background-color: #143447;
+    /* Màu nền button */
+    color: white;
+    /* Màu chữ button */
+    border: none;
+    /* Xóa đường viền button */
+    cursor: pointer;
+    /* Con trỏ chuột thành dạng tay khi di chuột qua button */
+    width: 100px;
+    /* Chiều rộng nút bấm */
+    height: 35px;
+    /* Chiều cao nút bấm */
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Bóng đổ */
+    border: 2px solid #143447;
+    /* Đường viền */
+    padding: 1em;
+    /* Khoảng cách bên trong nút bấm */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 10%;
+    transition: transform 0.2s ease;
+
+}
+
+.nut-bam:before {
+    content: '';
+    /* Ẩn nội dung pseudo-element */
+    position: absolute;
+    /* Định vị tuyệt đối */
+    top: 50%;
+    /* Vị trí dọc: chính giữa */
+    left: 10px;
+    /* Vị trí ngang: 10px từ bên trái */
+    transform: translateY(-50%);
+    /* Di chuyển dọc: lên 50% để căn giữa theo chiều dọc */
+    border: 10px solid transparent;
+    /* Tạo đường viền cho mũi tên */
+    border-left-color: white;
+    /* Màu mũi tên */
+}
+
+.nut-bam:hover {
+    transform: scale(1.2);
+    background-color: #396d8b;
+    /* Thay đổi màu nền khi di chuột qua */
+}
+.icon-contact> img:hover{
+    cursor: pointer;
+}
+
+.gia{
+    font-size: 30px;
+    color: crimson;
+    font-weight: bold;
+}
+
+.sub-list{
+    padding-left: 200px; 
+    font-size: smaller;
+}

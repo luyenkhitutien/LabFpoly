@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chi tiết sản phẩm</title>
+    <link href="css/style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../icon/logo.png" style="border-radius: 30px" /></a>
+    </header>
+    <main>
+        <section class="san-pham">
+            <div class="hinh-anh">
+                <ul class="danh-sach-anh">
+                    <li><img src="../image/ip15_promax.jpg" alt="ip15_promax"
+                            style="max-height: 600px; max-width: 400px;" /></li>
+                    <li><img src="../image/IP_15_1.webp" alt="Ảnh 2"></li>
+                    <li><img src="../image/IP_15_3.webp" alt="Ảnh 3" style="max-width: 600px;"></li>
+                </ul>
+
+                <button class="nut-bam">Next</button>
+
+                <script>
+                    // JavaScript để xử lý nút "Next"
+                    const nutBam = document.querySelector('.nut-bam');
+                    const danhSachAnh = document.querySelector('.danh-sach-anh');
+                    const danhSachAnhLi = danhSachAnh.querySelectorAll('li');
+
+                    let currentImageIndex = 0; // Biến lưu trữ chỉ số ảnh hiện tại
+
+                    nutBam.addEventListener('click', function () {
+                        // Ẩn ảnh hiện tại
+                        danhSachAnhLi[currentImageIndex].style.display = 'none';
+
+                        // Tăng chỉ số ảnh hiện tại
+                        currentImageIndex++;
+
+                        // Kiểm tra xem có phải ảnh cuối cùng hay không
+                        if (currentImageIndex === danhSachAnhLi.length) {
+                            // Nếu là ảnh cuối cùng, quay lại ảnh đầu tiên
+                            currentImageIndex = 0;
+                        }
+
+                        // Hiển thị ảnh tiếp theo
+                        danhSachAnhLi[currentImageIndex].style.display = 'block';
+                    });
+                </script>
+            </div>
+
+            <div class="thong-tin">
+                <h2>IPHONE 15 PRO MAX 256GB | CHÍNH HÃNG VN/A</h2>
+                <p class="gia">29.590.000₫ <del>34.990.000₫</del></p>
+                <p>
+                <div class="product-description">
+                    <h2>Thông số kỹ thuật</h2>
+                    <table class="table">
+                        <tr>
+                            <th>Hệ điều hành:</th>
+                            <td>iOS 17</td>
+                        </tr>
+                        <tr>
+                            <th>Kích thước:</th>
+                            <td>159.9 x 76.7 x 8.25 mm</td>
+                        </tr>
+                        <tr>
+                            <th>Cảm biến:</th>
+                            <td>Face ID; LiDAR Scanner; Áp kế; Con quay hồi chuyển độ lệch tương phản cao; Gia tốc kế
+                                lực G cao; Cảm biến tiệm cận; Hai cảm biến ánh sáng môi trường</td>
+                        </tr>
+                        <tr>
+                            <th>Màn hình:</th>
+                            <td>Super Retina XDR OLED</td>
+                        </tr>
+                        <tr>
+                            <th>Màn hình rộng:</th>
+                            <td>6.7 inches</td>
+                        </tr>
+                        <tr>
+                            <th>Độ phân giải:</th>
+                            <td>2796 x 1290 pixel</td>
+                        </tr>
+                        <tr>
+                            <th>Mật độ điểm ảnh:</th>
+                            <td>460 ppi</td>
+                        </tr>
+                        <tr>
+                            <th>Tính năng màn hình:</th>
+                            <td>Dynamic Island; Màn hình Luôn Bật; Công nghệ ProMotion với tốc độ làm mới thích ứng lên
+                                đến 120Hz; Màn hình HDR; True Tone; Dải màu rộng (P3); Haptic Touch; Lớp phủ kháng dầu
+                                chống in dấu vân tay</td>
+                        </tr>
+                        <tr>
+                            <th>Bộ nhớ trong:</th>
+                            <td>256GB</td>
+                        </tr>
+                        <tr>
+                            <th>CPU:</th>
+                            <td>6 lõi mới với 2 lõi hiệu năng và 4 lõi tiết kiệm điện</td>
+                        </tr>
+                        <tr>
+                            <th>Chip đồ họa (GPU):</th>
+                            <td>6 lõi mới</td>
+                        </tr>
+                        <tr>
+                            <th>Chipset:</th>
+                            <td>Chip A17 Pro</td>
+                        </tr>
+                        <tr>
+                            <th>Camera Sau:</th>
+                            <td>Chính 48 MP & Phụ 12 MP, 12 MP</td>
+                        </tr>
+                        <tr>
+                            <th>Camera trước:</th>
+                            <td>12 MP</td>
+                        </tr>
+                        <tr>
+                            <th>Tính năng bảo mật:</th>
+                            <td>Face ID</td>
+                        </tr>
+                        <tr>
+                            <th>Mạng di động:</th>
+                            <td>Hỗ trợ 5G</td>
+                        </tr>
+                        <tr>
+                            <th>Bluetooth:</th>
+                            <td>5.3</td>
+                        </tr>
+                        <tr>
+                            <th>Wifi:</th>
+                            <td>Wi‑Fi 6E (802.11ax) với 2x2 MIMO</td>
+                        </tr>
+                        <tr>
+                            <th>Cổng sạc:</th>
+                            <td>USB Type-C</td>
+                        </tr>
+                        <tr>
+                            <th>Trọng lượng:</th>
+                            <td>221 gram</td>
+                        </tr>
+                    </table>
+
+                    <!-- Add more sections as needed -->
+                </div>
+                </p>
+                <form action="#">
+                    <label for="soluong">Số lượng:</label>
+                    <input type="number" id="soluong" min="1" value="1">
+
+                    <button type="submit">Thêm vào giỏ hàng</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Công ty cổ phần thương mại dịch vụ MK. Đã đăng ký Bản quyền.</p>
+        <p>
+            Liên hệ với chúng tôi:
+            <!--Button/icon-->
+        <div class="icon-contact">
+            <img src="../icon/YT.png" />
+            <img src="../icon/FB.png" />
+            <img src="../icon/tiktok.png" />
+        </div>
+        </p>
+    </footer>
+</body>
+
+</html>

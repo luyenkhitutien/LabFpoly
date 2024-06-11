@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chi tiết sản phẩm</title>
+    <link href="css/style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../icon/logo.png" style="border-radius: 30px" /></a>
+    </header>
+    <main>
+        <section class="san-pham">
+            <div class="hinh-anh">
+                <ul class="danh-sach-anh">
+                    <li><img src="../image/rk-r65-prod.jpg" alt="Tên sản phẩm"
+                            style="padding-top: 10px; max-height: 550px;"></li>
+                    <li><img src="../image/rk-r65-prod-white.jpg" alt="Ảnh 2" style="padding-top: 10px;"></li>
+                    <li><img src="../image/rk-r65-prod-black.jpg" alt="Ảnh 4" style="padding-top: 10px;"></li>
+                    <li><img src="../image/rk-r65-box.jpg" alt="Ảnh 4" style="padding-top: 10px; max-height: 550px;">
+                    </li>
+                </ul>
+
+                <button class="nut-bam">Next</button>
+
+                <script>
+                    // JavaScript để xử lý nút "Next"
+                    const nutBam = document.querySelector('.nut-bam');
+                    const danhSachAnh = document.querySelector('.danh-sach-anh');
+                    const danhSachAnhLi = danhSachAnh.querySelectorAll('li');
+
+                    let currentImageIndex = 0; // Biến lưu trữ chỉ số ảnh hiện tại
+
+                    nutBam.addEventListener('click', function () {
+                        // Ẩn ảnh hiện tại
+                        danhSachAnhLi[currentImageIndex].style.display = 'none';
+
+                        // Tăng chỉ số ảnh hiện tại
+                        currentImageIndex++;
+
+                        // Kiểm tra xem có phải ảnh cuối cùng hay không
+                        if (currentImageIndex === danhSachAnhLi.length) {
+                            // Nếu là ảnh cuối cùng, quay lại ảnh đầu tiên
+                            currentImageIndex = 0;
+                        }
+
+                        // Hiển thị ảnh tiếp theo
+                        danhSachAnhLi[currentImageIndex].style.display = 'block';
+                    });
+                </script>
+            </div>
+
+            <div class="thong-tin">
+                <h2>Bàn Phím Cơ RK R65 Led RGB/ Full Foam/ Gasket Mount - App tùy chỉnh - Núm Xoay - Layout 65 - 1 Mode</h2>
+                <p class="gia">755.999 ₫ <del>1.458.000 ₫</del></p>
+                <p>
+                <div class="product-description">
+                    <h2>Thông số kỹ thuật</h2>
+                    <table class="table">
+                        <tr>
+                            <th>Thương hiệu:</th>
+                            <td>RK Royal Kludge</td>
+                        </tr>
+                        <tr>
+                            <th>Mô hình sản phẩm:</th>
+                            <td>RK R65</td>
+                        </tr>
+                        <tr>
+                            <th>Phím số:</th>
+                            <td>66</td>
+                        </tr>
+                        <tr>
+                            <th>Bàn Phím Màu:</th>
+                            <td>greensand/Phantom</td>
+                        </tr>
+                        <tr>
+                            <th>Trục cơ thể:</th>
+                            <td>Chartreuse/Màu xanh/công tắc màu nâu</td>
+                        </tr>
+                        <tr>
+                            <th>Kết nối:</th>
+                            <td>Có dây</td>
+                        </tr>
+                        <tr>
+                            <th>Đèn nền:</th>
+                            <td>RGB</td>
+                        </tr>
+                        <tr>
+                            <th>Bố trí:</th>
+                            <td>66 phím 60% bố trí bàn phím</td>
+                        </tr>
+                        <tr>
+                            <th>Hệ thống:</th>
+                            <td>windoes, iOS, MacOS, Linux, Android</td>
+                        </tr>
+                        <tr>
+                            <th>Kích thước:</th>
+                            <td>351mm × 116.8mm × 40.5mm</td>
+                        </tr>
+                        <tr>
+                            <th>Gói bao gồm:</th>
+                            <td>1 x RK R65 Bàn phím cơ, 1 x bụi che, 1x2 trong 1 Keycap & chuyển puller, 4 x thay thế RK
+                                chuyển đổi, 1 x Loại cáp C, 1 x tài liệu hướng dẫn sử dụng</td>
+                        </tr>
+                    </table>
+
+                    <!-- Add more sections as needed -->
+                </div>
+                </p>
+                <form action="#">
+                    <label for="soluong">Số lượng:</label>
+                    <input type="number" id="soluong" min="1" value="1">
+
+                    <button type="submit">Thêm vào giỏ hàng</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Công ty cổ phần thương mại dịch vụ MK. Đã đăng ký Bản quyền.</p>
+        <p>
+            Liên hệ với chúng tôi:
+            <!--Button/icon-->
+        <div class="icon-contact">
+            <img src="../icon/YT.png" />
+            <img src="../icon/FB.png" />
+            <img src="../icon/tiktok.png" />
+        </div>
+        </p>
+    </footer>
+</body>
+
+</html>

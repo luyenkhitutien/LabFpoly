@@ -1,0 +1,81 @@
+.logo {
+    float: left;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.gio-hang {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.table-gio-hang {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-gio-hang th,
+.table-gio-hang td {
+    padding: 5px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 10px;
+    border: 2px solid #143447;
+}
+
+.table-gio-hang th{
+    color: crimson;
+}
+
+.so-luong {
+    width: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+
+.dia-chi-giao-hang {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.dia-chi-giao-hang h3 {
+    margin-bottom: 10px;
+}
+
+.dia-chi-giao-hang input[type="text"],
+.dia-chi-giao-hang input[type="email"],
+.dia-chi-giao-hang input[type="tel"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px 20px;  
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45A049;
+}

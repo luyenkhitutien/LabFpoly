@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/style2.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img src="icon/logo.png" alt="logoShop" style="border-radius: 40px;" /></a>
+            <form>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                </div>
+            </form>
+            <div class="login">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="icon/User1.png" alt="Log in/Register" title="Tài khoản" />
+                        </a>
+                        <ul class="user">
+                            <li><a href="tai-khoan.html">Tài khoản</a></li>
+                            <li><a href="dang-ky.html">Đăng ký</a></li>
+                            <li><a href="dang-nhap.html">Đăng nhập</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img src="icon/hotline.png" alt="Hotline" title="Hotline" /></a>
+                        <ul class="user">
+                            <li>0999xxxxxx</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img src="icon/icon-gio-hang.png" alt="Giỏ hàng" title="Giỏ hàng" /></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" target="page">Hot Voucher</a></li>
+                <li><a href="#" target="page">Tin công nghệ</a></li>
+                <li><a href="#" target="page">Tra cứu bảo hành</a></li>
+                <li><a href="#" target="page">Hướng dẫn thanh toán</a></li>
+                <li><a href="#" target="page">Hệ thống Showroom</a></li>
+                <li><a href="gioithieu.html" target="page">Giới thiệu</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="gio-hang">
+                <h2>Thông tin giỏ hàng</h2>
+                <table class="table-gio-hang">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Thông tin sản phẩm</th>
+                            <th>Đơn giá (VNĐ)</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền (VNĐ)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="image/asus-rog-strix-scar-18-gaming.webp" alt="">
+                            </td>
+                            <td>Laptop ASUS ROG Strix G16 G614JU-N3135W</td>
+                            <td>30.990.000</td>
+                            <td>
+                                <input type="number" class="so-luong" value="1" min="0">
+                            </td>
+                            <td>30.990.000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="image/rk-r65.webp" alt="">
+                            </td>
+                            <td>Bàn Phím Cơ RK R65 Led RGB/ Full Foam/ Gasket Mount - App tùy chỉnh - Núm Xoay - Layout 65 - 1 Mode</td>
+                            <td>755.999</td>
+                            <td>
+                                <input type="number" class="so-luong" value="1" min="0">
+                            </td>
+                            <td>755.999</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="image/airpod-pro.png" alt="">
+                            </td>
+                            <td>AirPods Pro (2nd Gen) Lightning</td>
+                            <td>5,950,000</td>
+                            <td>
+                                <input type="number" class="so-luong" value="1" min="0">
+                            </td>
+                            <td>11,900,000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Tổng cộng:</td>
+                            <td style="color: crimson; font-weight: bold;">43,645,999</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form action="#">
+                    <div class="dia-chi-giao-hang">
+                        <h3>Địa chỉ giao hàng</h3>
+                        <input type="text" name="ten-khach-hang" placeholder="Họ và tên">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="tel" name="dien-thoai" placeholder="Số điện thoại">
+                        <input type="text" name="dia-chi" placeholder="Địa chỉ">
+                    </div>
+                    <button type="submit">Xác nhận đặt hàng</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Công ty cổ phần thương mại dịch vụ MK. Đã đăng ký Bản quyền.</p>
+            <p>
+                Liên hệ với chúng tôi:
+                <!--Button/icon-->
+            <div class="icon-contact">
+                <img src="icon/YT.png" />
+                <img src="icon/FB.png" />
+                <img src="icon/tiktok.png" />
+            </div>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

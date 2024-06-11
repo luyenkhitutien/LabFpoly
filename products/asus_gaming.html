@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chi tiết sản phẩm</title>
+    <link href="css/style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../icon/logo.png" style="border-radius: 30px" /></a>
+    </header>
+    <main>
+        <section class="san-pham">
+            <div class="hinh-anh">
+                <ul class="danh-sach-anh">
+                    <li><img src="../image/asus_tuf_st.png" alt="Tên sản phẩm"></li>
+                    <li><img src="../image/asus_tuf.png" alt="Ảnh 2"></li>
+                    <li><img src="../image/asus_tuf_1.webp" alt="Ảnh 4"></li>
+                    <li><img src="../image/asus_tuf_real.png" alt="Ảnh 4"></li>
+                </ul>
+
+                <button class="nut-bam">Next</button>
+
+                <script>
+                    // JavaScript để xử lý nút "Next"
+                    const nutBam = document.querySelector('.nut-bam');
+                    const danhSachAnh = document.querySelector('.danh-sach-anh');
+                    const danhSachAnhLi = danhSachAnh.querySelectorAll('li');
+
+                    let currentImageIndex = 0; // Biến lưu trữ chỉ số ảnh hiện tại
+
+                    nutBam.addEventListener('click', function () {
+                        // Ẩn ảnh hiện tại
+                        danhSachAnhLi[currentImageIndex].style.display = 'none';
+
+                        // Tăng chỉ số ảnh hiện tại
+                        currentImageIndex++;
+
+                        // Kiểm tra xem có phải ảnh cuối cùng hay không
+                        if (currentImageIndex === danhSachAnhLi.length) {
+                            // Nếu là ảnh cuối cùng, quay lại ảnh đầu tiên
+                            currentImageIndex = 0;
+                        }
+
+                        // Hiển thị ảnh tiếp theo
+                        danhSachAnhLi[currentImageIndex].style.display = 'block';
+                    });
+                </script>
+            </div>
+
+            <div class="thong-tin">
+                <h2>Laptop Gaming Asus TUF A15 FA506NF HN005W</h2>
+                <p class="gia">15,990,000₫ <del>24,990,000₫</del></p>
+                <p>
+                <div class="product-description">
+                    <h2>Thông số kỹ thuật</h2>
+                    <table class="table">
+                        <tr>
+                          <th>CPU:</th>
+                          <td>AMD Ryzen™ 5 7535HS</td>
+                        </tr>
+                        <tr>
+                          <th>VGA:</th>
+                          <td>Geforce RTX 2050 4GB</td>
+                        </tr>
+                        <tr>
+                          <th>RAM:</th>
+                          <td>DDR5 8GB (1 x 8GB) 4800MHz; 2 slots, up to 32GB</td>
+                        </tr>
+                        <tr>
+                          <th>SSD:</th>
+                          <td>512GB SSD NVMe M.2 PCIe Gen 4 x 4, 2 slots</td>
+                        </tr>
+                        <tr>
+                          <th>Màn hình:</th>
+                          <td>15.6" FullHD (1920 x 1080), 144Hz, G-sync, IPS Panel</td>
+                        </tr>
+                        <tr>
+                          <th>Hệ điều hành:</th>
+                          <td>Windows 11 64 Bit</td>
+                        </tr>
+                        <tr>
+                          <th>LAN:</th>
+                          <td>Gigabit Lan</td>
+                        </tr>
+                        <tr>
+                          <th>Wireless Lan:</th>
+                          <td>Wi-Fi 6(802.11ax) (Dual band) + Bluetooth 5.2</td>
+                        </tr>
+                        <tr>
+                          <th>Cổng kết nối:</th>
+                          <td>1x RJ45 LAN port 1x Thunderbolt™ 4 support DisplayPort™ 1x USB 3.2 Gen 2 Type-C support DisplayPort™ / power delivery / G-SYNC 2x USB 3.2 Gen 1 Type-A</td>
+                        </tr>
+                        <tr>
+                          <th>Bàn phím:</th>
+                          <td>Backlight Keyboard 1-Zone RGB</td>
+                        </tr>
+                        <tr>
+                          <th>Pin:</th>
+                          <td>90WHrs, 4S1P, 4-cell Li-ion</td>
+                        </tr>
+                        <tr>
+                          <th>Trọng lượng:</th>
+                          <td>2.2 kg</td>
+                        </tr>
+                        <tr>
+                          <th>Kích thước:</th>
+                          <td>35.4 x 25.1 x 2.24 ~ 2.49 cm</td>
+                        </tr>
+                      </table>
+                      
+                    <!-- Add more sections as needed -->
+                </div>
+                </p>
+                <form action="#">
+                    <label for="soluong">Số lượng:</label>
+                    <input type="number" id="soluong" min="1" value="1">
+
+                    <button type="submit">Thêm vào giỏ hàng</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Công ty cổ phần thương mại dịch vụ MK. Đã đăng ký Bản quyền.</p>
+        <p>
+            Liên hệ với chúng tôi:
+            <!--Button/icon-->
+        <div class="icon-contact">
+            <img src="../icon/YT.png" />
+            <img src="../icon/FB.png" />
+            <img src="../icon/tiktok.png" />
+        </div>
+        </p>
+    </footer>
+</body>
+
+</html>

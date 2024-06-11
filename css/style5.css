@@ -1,0 +1,93 @@
+main {
+    padding: 20px;
+}
+
+.lien-he {
+    align-items: center;
+    display: flex;
+}
+
+.sub-container{
+    flex-direction: column;
+    float: left;
+    width: 100%;
+}
+
+.lien-he .thong-tin-lien-he {
+    margin-bottom: 20px;
+    float: left;
+}
+
+.lien-he .thong-tin-lien-he h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.lien-he .thong-tin-lien-he p {
+    padding: 10px;
+    display: inline-block;
+}
+
+.lien-he .thong-tin-lien-he a {
+    color: #333;
+    text-decoration: none;
+}
+
+.lien-he .thong-tin-lien-he a:hover {
+    color: #111;
+}
+
+.lien-he .iframe-google-map {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding-left: 10px;
+    float: left;
+}
+
+.lien-he .iframe-google-map h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lien-he .form-lien-he {
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Added box-shadow property */
+}
+
+.lien-he .form-lien-he label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.lien-he .form-lien-he input[type="text"],
+.lien-he .form-lien-he textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.lien-he .form-lien-he button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.lien-he .form-lien-he button:hover {
+    background-color: #222;
+}

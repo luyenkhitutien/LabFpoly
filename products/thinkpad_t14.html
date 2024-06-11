@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chi tiết sản phẩm</title>
+    <link href="css/style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../icon/logo.png" style="border-radius: 30px" /></a>
+    </header>
+    <main>
+        <section class="san-pham">
+            <div class="hinh-anh">
+                <ul class="danh-sach-anh">
+                    <li><img src="../image/ThinkPad-T14-Gen-2.webp" alt="Tên sản phẩm"></li>
+                    <li><img src="../image/Laptop-Lenovo-ThinkPad-T14-Gen-2-CPU-Intel-COREI5-4.png" alt="Ảnh 2"></li>
+                    <li>
+                        <img src="../image/ThinkPad-T14-Gen-front.png" alt="Ảnh 3.1" />
+                        <br />
+                        <img src="../image/ThinkPad-T14-Gen-back.png" alt="Ảnh 3.2" />
+                    </li>
+                    <li>
+                        <img src="../image/t14s_gen2_overview-1.png" alt="Ảnh 4">
+                        <p>1. USB-C Thunderbolt™ 4 cấp nguồn</p>
+                        <p>2. USB-C Thunderbolt 4</p>
+                        <p>3. Mở rộng mạng cho Ethernet/Dock cơ bên hông</p>
+                        <p>4. HDMI 2.0</p>
+                        <p>5. USB-A 3.2 Gen 1</p>
+                        <p>6. Tai nghe/micrô kết hợp</p>
+                        <p>7. Đầu đọc thẻ thông minh tùy chọn</p>
+                        <p>8. USB-A 3.2 Gen 1</p>
+                        <p>9. Kensington Nano Security Slot™</p>
+                    </li>
+                </ul>
+
+                <button class="nut-bam">Next</button>
+
+                <script>
+                    // JavaScript để xử lý nút "Next"
+                    const nutBam = document.querySelector('.nut-bam');
+                    const danhSachAnh = document.querySelector('.danh-sach-anh');
+                    const danhSachAnhLi = danhSachAnh.querySelectorAll('li');
+
+                    let currentImageIndex = 0; // Biến lưu trữ chỉ số ảnh hiện tại
+
+                    nutBam.addEventListener('click', function () {
+                        // Ẩn ảnh hiện tại
+                        danhSachAnhLi[currentImageIndex].style.display = 'none';
+
+                        // Tăng chỉ số ảnh hiện tại
+                        currentImageIndex++;
+
+                        // Kiểm tra xem có phải ảnh cuối cùng hay không
+                        if (currentImageIndex === danhSachAnhLi.length) {
+                            // Nếu là ảnh cuối cùng, quay lại ảnh đầu tiên
+                            currentImageIndex = 0;
+                        }
+
+                        // Hiển thị ảnh tiếp theo
+                        danhSachAnhLi[currentImageIndex].style.display = 'block';
+                    });
+                </script>
+            </div>
+
+            <div class="thong-tin">
+                <h2>Lenovo ThinkPad T14 Gen 2 | i5 1145G7 Intel Iris Xe 16GB 512GB 14" FHD</h2>
+                <p class="gia">16.490.000đ <del>17.060.000đ</del></p>
+                <p>
+                <div class="product-description">
+                    <h2>Thông số kỹ thuật</h2>
+                    <table class="table">
+                        <tr>
+                            <th>Bộ xử lý</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Loại CPU:</th>
+                            <td>Intel Core i5-1145G7 | 4 nhân, 8 luồng</td>
+                        </tr>
+                        <tr>
+                            <th>Tốc độ:</th>
+                            <td>2.6GHz Turbo 4.4GHz</td>
+                        </tr>
+                        <tr>
+                            <th>Bộ nhớ đệm:</th>
+                            <td>8MB</td>
+                        </tr>
+                        <tr>
+                            <th>Card đồ hoạ</th>
+                            <td>Intel Iris Xe</td>
+                        </tr>
+                        <tr>
+                            <th>Ram</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Dung lượng:</th>
+                            <td>16GB DDR4 3200MHz</td>
+                        </tr>
+                        <tr>
+                            <th>Hỗ trợ tối đa:</th>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <th>Ổ cứng lưu trữ</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Dung lượng SSD:</th>
+                            <td>512GB M2 NVMe</td>
+                        </tr>
+                        <tr>
+                            <th>Khả năng nâng cấp:</th>
+                            <td>Hỗ trợ 1 SSD</td>
+                        </tr>
+                        <tr>
+                            <th>Màn hình</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Màn hình:</th>
+                            <td>14inch, 1920 x 1080px, 60Hz</td>
+                        </tr>
+                        <tr>
+                            <th>Thông số khác:</th>
+                            <td>16:9, 400Nits, IPS, 95% sRGB</td>
+                        </tr>
+                        <tr>
+                            <th>Khối lượng & Kích thước</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Khối lượng:</th>
+                            <td>1.46kg</td>
+                        </tr>
+                        <tr>
+                            <th>Kích thước:</th>
+                            <td>329mm x 227mm x 17,9mm</td>
+                        </tr>
+                        <tr>
+                            <th>Pin</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Dung lượng pin:</th>
+                            <td>50WHr</td>
+                        </tr>
+                        <tr>
+                            <th>Cổng kết nối</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Cổng giao tiếp:</th>
+                            <td>2x Type C, 2x USB, 1x HDMi, 1x LAN, 1x 3.5mm</td>
+                        </tr>
+                        <tr>
+                            <th>Thông số khác</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Hệ điều hành:</th>
+                            <td>Window
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Add more sections as needed -->
+                </div>
+                </p>
+                <form action="#">
+                    <label for="soluong">Số lượng:</label>
+                    <input type="number" id="soluong" min="1" value="1">
+
+                    <button type="submit">Thêm vào giỏ hàng</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Công ty cổ phần thương mại dịch vụ MK. Đã đăng ký Bản quyền.</p>
+        <p>
+            Liên hệ với chúng tôi:
+            <!--Button/icon-->
+        <div class="icon-contact">
+            <img src="../icon/YT.png" />
+            <img src="../icon/FB.png" />
+            <img src="../icon/tiktok.png" />
+        </div>
+        </p>
+    </footer>
+</body>
+
+</html>

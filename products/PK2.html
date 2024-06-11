@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chi tiết sản phẩm</title>
+    <link href="css/style1.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../icon/logo.png" style="border-radius: 30px"/></a>
+    </header>
+    <main>
+        <section class="san-pham">
+            <div class="hinh-anh">
+                <ul class="danh-sach-anh">
+                    <li><img src="../image/airpod-pro.png" alt="Tên sản phẩm"></li>
+                    <li><img src="../image/AIRPOD_PRO_2_note.jpg" alt="Ảnh 2" style="padding-top: 10px; max-height: 550px;"></li>
+                    <li><img src="../image/AIRPOD_PRO_2.jpg" alt="Ảnh 3"></li>
+                    <li><img src="../image/airpod-pro_box.jpg" alt="Ảnh 4"></li>
+                    </ul>
+                
+                  <button class="nut-bam">Next</button>
+                
+                  <script>
+                    // JavaScript để xử lý nút "Next"
+                    const nutBam = document.querySelector('.nut-bam');
+                    const danhSachAnh = document.querySelector('.danh-sach-anh');
+                    const danhSachAnhLi = danhSachAnh.querySelectorAll('li');
+                
+                    let currentImageIndex = 0; // Biến lưu trữ chỉ số ảnh hiện tại
+                
+                    nutBam.addEventListener('click', function() {
+                      // Ẩn ảnh hiện tại
+                      danhSachAnhLi[currentImageIndex].style.display = 'none';
+                
+                      // Tăng chỉ số ảnh hiện tại
+                      currentImageIndex++;
+                
+                      // Kiểm tra xem có phải ảnh cuối cùng hay không
+                      if (currentImageIndex === danhSachAnhLi.length) {
+                        // Nếu là ảnh cuối cùng, quay lại ảnh đầu tiên
+                        currentImageIndex = 0;
+                      }
+                
+                      // Hiển thị ảnh tiếp theo
+                      danhSachAnhLi[currentImageIndex].style.display = 'block';
+                    });
+                  </script>
+            </div>
+
+            <div class="thong-tin">
+                <h2>AirPods Pro (2nd Gen) Lightning</h2>
+                <p class="gia">5,950,000₫ <DEL>6,660,000đ</DEL></p>
+                <p>
+                <div class="product-description">
+                    <h2>Thông số kỹ thuật</h2>
+                    <table class="table">
+                        <tr>
+                          <th>Thời lượng pin tai nghe:</th>
+                          <td>Dùng 6 giờ - Sạc Hãng không công bố</td>
+                        </tr>
+                        <tr>
+                          <th>Thời lượng pin hộp sạc:</th>
+                          <td>Dùng 30 giờ - Sạc Hãng không công bố</td>
+                        </tr>
+                        <tr>
+                          <th>Cổng sạc:</th>
+                          <td>Sạc MagSafe, Lightning, Sạc không dây Qi</td>
+                        </tr>
+                        <tr>
+                          <th>Công nghệ âm thanh:</th>
+                          <td>Active Noise Cancellation, Chip Apple H2, Adaptive EQ</td>
+                        </tr>
+                        <tr>
+                          <th>Tương thích:</th>
+                          <td>Android, iOS (iPhone, iPad), Windows, MacOS (Macbook, iMac)</td>
+                        </tr>
+                        <tr>
+                          <th>Tiện ích:</th>
+                          <td>Trợ lý ảo Siri, Chống nước IPX4, Có mic thoại, Sạc không dây, Sạc nhanh, Chống ồn chủ động ANC</td>
+                        </tr>
+                        <tr>
+                          <th>Kết nối cùng lúc:</th>
+                          <td>1 thiết bị</td>
+                        </tr>
+                        <tr>
+                          <th>Công nghệ kết nối:</th>
+                          <td>Bluetooth 5.3</td>
+                        </tr>
+                        <tr>
+                          <th>Điều khiển:</th>
+                          <td>Cảm ứng chạm</td>
+                        </tr>
+                        <tr>
+                          <th>Phím điều khiển:</th>
+                          <td>Tăng/giảm âm lượng, Phát/dừng chơi nhạc, Chuyển bài hát, Bật trợ lí ảo, Chuyển chế độ, Nhận/Ngắt cuộc gọi, Bật/Tắt chống ồn</td>
+                        </tr>
+                        <tr>
+                          <th>Kích thước:</th>
+                          <td>Dài 3.09 cm - Rộng 2.18 cm - Cao 2.17 cm</td>
+                        </tr>
+                        <tr>
+                          <th>Khối lượng:</th>
+                          <td>5.3 g</td>
+                        </tr>
+                        <tr>
+                          <th>Thương hiệu của:</th>
+                          <td>Mỹ</td>
+                        </tr>
+                        <tr>
+                          <th>Sản xuất tại:</th>
+                          <td>Việt Nam / Trung Quốc (tùy lô hàng)</td>
+                        </tr>
+                      </table>
+                      
+                    <!-- Add more sections as needed -->
+                </div>
+                </p>
+                <form action="#">
+                    <label for="soluong">Số lượng:</label>
+                    <input type="number" id="soluong" min="1" value="1">
+
+                    <button type="submit">Thêm vào giỏ hàng</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Công ty cổ phần thương mại dịch vụ MK. Đã đăng ký Bản quyền.</p>
+        <p>
+            Liên hệ với chúng tôi:
+            <!--Button/icon-->
+        <div class="icon-contact">
+            <img src="../icon/YT.png" />
+            <img src="../icon/FB.png" />
+            <img src="../icon/tiktok.png" />
+        </div>
+        </p>
+    </footer>
+</body>
+
+</html>

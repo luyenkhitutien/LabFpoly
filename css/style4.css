@@ -1,0 +1,79 @@
+main {
+    padding: 20px;
+}
+
+.thong-tin-tai-khoan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.thong-tin-tai-khoan table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thong-tin-tai-khoan th,
+.thong-tin-tai-khoan td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.thong-tin-tai-khoan th {
+    background-color: #f0f0f0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.chi-tiet-tai-khoan {
+    margin-bottom: 20px;
+}
+
+.lich-su-mua-hang {
+    margin-bottom: 20px;
+}
+
+.lich-su-mua-hang h2 {
+    color: #333;
+    font-size: 18px;
+}
+
+.lich-su-mua-hang table {
+    margin-bottom: 20px;
+}
+
+.lich-su-mua-hang th,
+.lich-su-mua-hang td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.lich-su-mua-hang th {
+    background-color: #f0f0f0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.cai-dat-tai-khoan {
+    margin-bottom: 20px;
+}
+
+.cai-dat-tai-khoan h2 {
+    color: #333;
+    font-size: 18px;
+}
+
+.cai-dat-tai-khoan a {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.cai-dat-tai-khoan a:hover {
+    background-color: #e0e0e0;
+}

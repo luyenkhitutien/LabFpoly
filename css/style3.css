@@ -1,0 +1,77 @@
+main {
+    padding: 20px;
+    margin-left: 200px;
+    width: 50%;
+}
+
+.form-dang-ky {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-dang-nhap {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.thanh-tieu-de {
+    margin-bottom: 20px;
+}
+
+.thanh-tieu-de h2 {
+    color: #333;
+    font-size: 18px;
+}
+
+.nhom-input {
+    margin-bottom: 15px;
+}
+
+.nhom-input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #143447;
+}
+
+.nhom-input input[type="text"],
+.nhom-input input[type="email"],
+.nhom-input input[type="tel"],
+.nhom-input input[type="password"],
+.nhom-input input[type="file"],
+.nhom-input input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.dieu-khoan {
+    margin-bottom: 15px;
+}
+
+.dieu-khoan input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.dieu-khoan label {
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    /* xanh lá */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 120px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45A049;
+    /* xanh lá đậm hơn */
+}

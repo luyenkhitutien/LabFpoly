@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chi tiết sản phẩm</title>
+    <link href="css/style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../icon/logo.png" style="border-radius: 30px" /></a>
+    </header>
+    <main>
+        <section class="san-pham">
+            <div class="hinh-anh">
+                <ul class="danh-sach-anh">
+                    <li><img src="../image/DELL-INSPIRON-3511.png" alt="Tên sản phẩm"></li>
+                    <li><img src="../image/DELL-INSPIRON-3511.webp" alt="Ảnh 2"></li>
+                    <li><img src="../image/DELL-INSPIRON-3511_1.png" alt="Ảnh 3"></li>
+                    <li><img src="../image/dell-inspiron-3511.jpg" alt="Ảnh 4"></li>
+                </ul>
+
+                <button class="nut-bam">Next</button>
+                <script>
+                    // JavaScript để xử lý nút "Next"
+                    const nutBam = document.querySelector('.nut-bam');
+                    const danhSachAnh = document.querySelector('.danh-sach-anh');
+                    const danhSachAnhLi = danhSachAnh.querySelectorAll('li');
+                    let currentImageIndex = 0; // Biến lưu trữ chỉ số ảnh hiện tại
+
+                    nutBam.addEventListener('click', function () {
+                        // Ẩn ảnh hiện tại
+                        danhSachAnhLi[currentImageIndex].style.display = 'none';
+
+                        // Tăng chỉ số ảnh hiện tại
+                        currentImageIndex++;
+
+                        // Kiểm tra xem có phải ảnh cuối cùng hay không
+                        if (currentImageIndex === danhSachAnhLi.length) {
+                            // Nếu là ảnh cuối cùng, quay lại ảnh đầu tiên
+                            currentImageIndex = 0;
+                        }
+
+                        // Hiển thị ảnh tiếp theo
+                        danhSachAnhLi[currentImageIndex].style.display = 'block';
+                    });
+                </script>
+            </div>
+
+            <div class="thong-tin">
+                <h2>Dell Inspiron 3511 i7 11th Gen / 8GB RAM / 512GB SSD / Nvidia MX350 / 15.6" FHD Display</h2>
+                <p class="gia">21.990.000₫ <del>24.390.000₫</del></p>
+                <p>
+                <div class="product-description">
+                    <h1 class="title">Thông số kỹ thuật Laptop</h1>
+
+                    <table class="table">
+                        <tr>
+                            <th>Thương hiệu</th>
+                            <td>ACER</td>
+                        </tr>
+                        <tr>
+                            <th>Bảo hành</th>
+                            <td>12 tháng</td>
+                        </tr>
+                        <tr>
+                            <th>Series laptop</th>
+                            <td>Nitro 16</td>
+                        </tr>
+                        <tr>
+                            <th>Part-number</th>
+                            <td>NH.QKBSV.003</td>
+                        </tr>
+                        <tr>
+                            <th>Màu sắc</th>
+                            <td>Đen</td>
+                        </tr>
+                        <tr>
+                            <th>Nhu cầu</th>
+                            <td>Gaming, Văn phòng</td>
+                        </tr>
+                        <tr>
+                            <th>Thế hệ CPU</th>
+                            <td>Ryzen 5, AMD</td>
+                        </tr>
+                        <tr>
+                            <th>CPU</th>
+                            <td>AMD Ryzen 5 7535HS (3.3 GHz - 4.5 GHz / 16MB / 6 nhân, 12 luồng)</td>
+                        </tr>
+                        <tr>
+                            <th>Chip đồ họa</th>
+                            <td>RTX 4050 6GB GDDR6 / AMD Radeon 660M</td>
+                        </tr>
+                        <tr>
+                            <th>RAM</th>
+                            <td>1 x 8GB DDR5 4800MHz (2 Khe cắm / Hỗ trợ tối đa 32GB)</td>
+                        </tr>
+                        <tr>
+                            <th>Màn hình</th>
+                            <td>16" (1920 x 1200) WUXGA IPS 165Hz, không cảm ứng, HD webcam</td>
+                        </tr>
+                        <tr>
+                            <th>Lưu trữ</th>
+                            <td>512GB SSD M.2 NVMe / Số cổng lưu trữ tối đa 2 x M.2 NVMe</td>
+                        </tr>
+                        <tr>
+                            <th>Kiểu khe M.2 hỗ trợ</th>
+                            <td>M.2 NVMe</td>
+                        </tr>
+                        <tr>
+                            <th>Cổng xuất hình</th>
+                            <td>1 x HDMI</td>
+                        </tr>
+                        <tr>
+                            <th>Cổng kết nối</th>
+                            <td>2 x USB Type C, 2 x USB 3.2, 1 x USB 2.0, 1 x micro SD card slot, Audio combo, LAN 1
+                                Gb/s</td>
+                        </tr>
+                        <tr>
+                            <th>Kết nối không dây</th>
+                            <td>WiFi 802.11ax (Wifi 6), Bluetooth 5.1</td>
+                        </tr>
+                        <tr>
+                            <th>Bàn phím</th>
+                            <td>Thường, có phím số, RGB 4 vùng</td>
+                        </tr>
+                        <tr>
+                            <th>Hệ điều hành</th>
+                            <td>Windows 11 Home SL</td>
+                        </tr>
+                        <tr>
+                            <th>Kích thước</th>
+                            <td>360.1 x 279.9 x 25.9 - 27.9 mm</td>
+                        </tr>
+                        <tr>
+                            <th>Pin</th>
+                            <td>4 cell 90 Wh, Pin liền</td>
+                        </tr>
+                        <tr>
+                            <th>Khối lượng</th>
+                            <td>2.6 kg</td>
+                        </tr>
+                        <tr>
+                            <th>Thông tin khác</th>
+                        </tr>
+                        <tr>
+                            <th>Đèn LED trên máy</th>
+                            <td>không đèn</td>
+                        </tr>
+                        <tr>
+                            <th>Phụ kiện đi kèm</th>
+                            <td>Adapter, dây nguồn</td>
+                        </tr>
+                        <tr>
+                            <th>Thông tin kích thước</th>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                </p>
+                <form action="#">
+                    <label for="soluong">Số lượng:</label>
+                    <input type="number" id="soluong" min="1" value="1">
+
+                    <button type="submit">Thêm vào giỏ hàng</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Công ty cổ phần thương mại dịch vụ MK. Đã đăng ký Bản quyền.</p>
+        <p>
+            Liên hệ với chúng tôi:
+            <!--Button/icon-->
+        <div class="icon-contact">
+            <img src="../icon/YT.png" />
+            <img src="../icon/FB.png" />
+            <img src="../icon/tiktok.png" />
+        </div>
+        </p>
+    </footer>
+</body>
+
+</html>
